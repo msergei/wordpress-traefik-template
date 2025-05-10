@@ -48,6 +48,7 @@ services:
         define('WP_HOME','https://${DOMAIN}');
         define('WP_SITEURL','https://${DOMAIN}');
         define('FORCE_SSL_ADMIN', true);
+      PHP_OPTIONS: "openssl.cafile=/etc/ssl/certs/ca-certificates.crt"
     volumes:
       - data:/var/www/html
     depends_on:
