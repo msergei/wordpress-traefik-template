@@ -57,7 +57,7 @@ services:
       - internal
 
   db:
-    image: mariadb:10.1
+    image: mariadb:11
     restart: always
     environment:
       MYSQL_DATABASE: ${DB_NAME}
